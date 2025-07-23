@@ -1,12 +1,12 @@
-services:
+databases:
   # Base de Datos PostgreSQL
   - name: n8n-database
-    type: psql
     plan: free
     databaseName: n8n
     user: n8n
     region: oregon
 
+services:
   # Aplicación n8n
   - name: n8n-servicio
     type: web
